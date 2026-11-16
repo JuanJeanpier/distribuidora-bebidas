@@ -502,128 +502,73 @@ footer h3 {
 
 footer strong {
 
-/* =========================================================
-   DISEÑO RESPONSIVO PARA TABLETS Y CELULARES (HASTA 1024PX)
-   ========================================================= */
-@media screen and (max-width: 1024px) {
-    /* BARRA DE NAVEGACIÓN */
+/* DISEÑO RESPONSIVO PARA CELULARES */
+@media (max-width: 768px) {
     .nav-contenedor {
-        flex-direction: column !important;
-        gap: 15px !important;
+        flex-direction: column;
+        gap: 12px;
         text-align: center;
     }
 
-    .nav-enlaces {
-        gap: 18px !important;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    /* SECCIÓN HERO */
-    .hero {
-        padding: 60px 25px;
-    }
-
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .seccion-contenedor {
-        margin: 40px auto;
-        padding: 0 25px;
-    }
-
-    /* APILA EL TEXTO Y EL CARRUSEL EN UNA COLUMNA (TABLET Y MÓVIL) */
-    .inicio-grid {
-        display: flex !important;
-        flex-direction: column !important;
-        padding: 35px !important;
-        gap: 30px !important;
-    }
-
-    .inicio-info,
-    .carrusel {
-        width: 100% !important;
-    }
-
-    .diapositiva img {
-        height: 280px;
-    }
-
-    /* TARJETAS DE BENEFICIOS Y PRODUCTOS EN 2 COLUMNAS EN TABLET */
-    .beneficios-grid,
-    .contenedor-productos {
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
-        gap: 20px !important;
-    }
-
-    /* APILA LA INFO Y EL FORMULARIO EN UNA COLUMNA (TABLET Y MÓVIL) */
-    .contacto-caja {
-        display: flex !important;
-        flex-direction: column !important;
-        padding: 35px !important;
-        gap: 30px !important;
-    }
-
-    .contacto-texto,
-    .formulario-moderno {
-        width: 100% !important;
-        padding: 25px !important;
-    }
-}
-
-/* AJUSTES FINOS EXCLUSIVOS PARA CELULARES PEQUEÑOS (HASTA 600PX) */
-@media screen and (max-width: 600px) {
     .logo {
         font-size: 1.2rem;
     }
 
     .nav-enlaces {
-        gap: 10px !important;
-    }
-
-    .nav-enlaces a {
-        font-size: 0.85rem;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .nav-enlaces .btn-nav {
-        padding: 8px 15px;
+        padding: 8px 16px;
         font-size: 0.85rem;
     }
 
     .hero {
-        padding: 45px 15px;
+        padding: 50px 15px;
     }
 
     .hero h1 {
-        font-size: 1.75rem;
-    }
-
-    .hero p {
-        font-size: 0.95rem;
+        font-size: 1.8rem;
     }
 
     .seccion-contenedor {
-        margin: 25px auto;
+        margin: 30px auto;
         padding: 0 15px;
     }
 
-    .inicio-grid,
-    .contacto-caja {
-        padding: 20px !important;
-        gap: 20px !important;
+    /* APILA EL TEXTO ARRIBA Y EL CARRUSEL ABAJO AL 100% DE ANCHO */
+    .inicio-grid {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .carrusel {
+        width: 100%;
     }
 
     .diapositiva img {
-        height: 210px;
+        height: 220px;
     }
 
     .btn-accion {
         width: 100%;
     }
 
+    /* APILA LA INFO Y EL FORMULARIO EN UNA SOLA COLUMNA */
+    .contacto-caja {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
     .formulario-moderno {
-        padding: 18px !important;
+        width: 100%;
+        padding: 20px;
     }
 }
 
