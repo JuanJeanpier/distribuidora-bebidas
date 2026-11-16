@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidora de Bebidas | Mayorista y Minorista</title>
+    <!-- Tipografía moderna de Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <!-- Conexión con nuestro archivo CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN FIJA -->
+    <nav class="navbar">
+        <div class="nav-contenedor">
+            <div class="logo">
+                <span class="logo-icono">🥤</span>
+                <span class="logo-texto">DISTRI<strong>BEBIDAS YANINA</strong></span>
+            </div>
+            <div class="nav-enlaces">
+                <a href="#inicio">Inicio</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#productos">Catálogo</a>
+                <a href="#contacto" class="btn-nav">Cotizar Ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ENCABEZADO HERO -->
+    <header class="hero">
+        <div class="hero-contenido">
+            <span class="etiqueta-superior">Abastecimiento Rápido y Seguro</span>
+            <h1>Tu Distribuidora de Bebidas de Confianza</h1>
+            <p>Abastecemos tu bodega, restaurante, evento u hogar con las mejores marcas de gaseosas, aguas y bebidas al por mayor y menor.</p>
+            <div class="hero-botones">
+                <a href="#productos" class="btn-primario">Ver Catálogo</a>
+                <a href="#contacto" class="btn-secundario">Solicitar Pedido</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- SECCIÓN DE INICIO Y CARRUSEL -->
+        <section id="inicio" class="seccion-contenedor">
+            <div class="inicio-grid">
+                <div class="inicio-info">
+                    <h2>Bienvenidos a nuestra distribuidora</h2>
+                    <p>
+                        Contamos con flota propia y stock permanente para garantizar que nunca te falten productos en tu negocio o reunión.
+                    </p>
+                    <div class="caja-oferta">
+                        <p id="mensaje">Descubre nuestras promociones exclusivas por volumen.</p>
+                        <button id="boton-cambiar" type="button" class="btn-accion">
+                            Ver ofertas del día
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CARRUSEL DE IMÁGENES -->
+                <div class="carrusel">
+                    <div class="diapositiva">
+                        <img src="imagenes/gaseosas.jpeg" alt="Gaseosas al por mayor">
+                        <div class="pie-foto">Línea completa de Gaseosas</div>
+                    </div>
+                    <div class="diapositiva">
+                        <img src="imagenes/agua.jpeg" alt="Agua mineral">
+                        <div class="pie-foto">Aguas minerales y de mesa</div>
+                    </div>
+                    <div class="diapositiva">
+                        <img src="imagenes/bebidas.jpeg" alt="Bebidas variadas">
+                        <div class="pie-foto">Jugos, néctares y energizantes</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE BENEFICIOS -->
+        <section id="beneficios" class="seccion-beneficios">
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <div class="icono">🚚</div>
+                    <h3>Entrega Express</h3>
+                    <p>Reparto programado en menos de 24 horas directo a tu local.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="icono">🏷️</div>
+                    <h3>Precios de Fábrica</h3>
+                    <p>Descuentos escalonados a partir de 10 paquetes.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="icono">📦</div>
+                    <h3>Stock Garantizado</h3>
+                    <p>Disponibilidad inmediata para eventos y campañas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE PRODUCTOS -->
+        <section id="productos" class="seccion-contenedor">
+            <div class="titulo-seccion">
+                <span>Catálogo Principal</span>
+                <h2>Nuestros Productos</h2>
+                <p>Haz clic en "Consultar precio" para calcular tu cotización al instante.</p>
+            </div>
+
+            <div class="contenedor-productos">
+
+                <div class="producto">
+                    <span class="badge">Más Vendido</span>
+                    <div class="img-contenedor">
+                        <img src="imagenes/gaseosas.jpeg" alt="Gaseosas">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Gaseosas</h3>
+                        <p>Presentaciones personales, familiares y descartables de las marcas líderes.</p>
+                        <button type="button" class="btn-producto">Consultar precio</button>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <span class="badge badge-azul">Alta Rotación</span>
+                    <div class="img-contenedor">
+                        <img src="imagenes/agua.jpeg" alt="Agua mineral">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Agua mineral</h3>
+                        <p>Agua con gas y sin gas en botellas individuales y bidones para tu negocio.</p>
+                        <button type="button" class="btn-producto">Consultar precio</button>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <span class="badge badge-amarillo">Variedad</span>
+                    <div class="img-contenedor">
+                        <img src="imagenes/bebidas.jpeg" alt="Bebidas">
+                    </div>
+                    <div class="producto-info">
+                        <h3>bebidas</h3>
+                        <p>Jugos, rehidratantes y energizantes ideales para todo tipo de público.</p>
+                        <button type="button" class="btn-producto">Consultar precio</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CONTACTO -->
+        <section id="contacto" class="seccion-contenedor">
+            <div class="contacto-caja">
+                <div class="contacto-texto">
+                    <h2>Solicitar información</h2>
+                    <p>Déjanos tus datos y un asesor comercial se comunicará contigo para enviarte nuestra lista de precios actualizada.</p>
+                    <ul class="datos-empresa">
+                        <li>📍 <strong>Cobertura:</strong> Envíos a toda la ciudad</li>
+                        <li>🕒 <strong>Horario:</strong> Lunes a Sábado de 8:00 am a 7:00 pm</li>
+                        <li>📞 <strong>Central de pedidos:</strong> Atención inmediata</li>
+                    </ul>
+                </div>
+
+                <form id="formulario-contacto" class="formulario-moderno">
+                    <div class="campo-grupo">
+                        <label for="nombre">Nombre completo o Negocio:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Bodega San Martín" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="celular">Número de Celular (9 dígitos):</label>
+                        <input type="tel" id="celular" name="celular" placeholder="Ej. 987654321" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="producto">Producto de interés:</label>
+                        <select id="producto" name="producto" required>
+                            <option value="">Selecciona una categoría</option>
+                            <option value="gaseosas">Gaseosas por mayor/menor</option>
+                            <option value="agua-mineral">Agua mineral y bidones</option>
+                            <option value="bebidas">Bebidas, jugos y energizantes</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar consulta</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-contenido">
+            <h3>DISTRI<strong>BEBIDAS</strong></h3>
+            <p>Gracias por visitar nuestra distribuidora. Atención al por mayor y menor.</p>
+            <div class="footer-linea"></div>
+            <small>&copy; 2026 Distribuidora de Bebidas. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- Conexión con JavaScript -->
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
